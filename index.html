@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beleza de Mulher - Salão de Beleza</title>
+    <link rel="icon" href="logo-beleza-da-mulher.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="logo-beleza-da-mulher.jpg" alt="Beleza da Mulher" class="logo">
+                    <h1>Beleza de Mulher</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#inicio">Início</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#galeria">Galeria</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+                <button class="whatsapp-btn" onclick="openWhatsApp()">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Realce sua <span class="highlight">beleza natural</span></h2>
+                    <p>No Beleza da Mulher, cada cliente é única. Venha descobrir todo seu potencial de beleza em um ambiente acolhedor e profissional.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="openWhatsApp()">Agendar Horário</button>
+                        <button class="btn btn-outline">Ver Serviços</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="tia.jpg" alt="Beleza de Mulher">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos uma gama completa de serviços de beleza com produtos de alta qualidade</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="Alisamento__.jpg" alt="Corte e Escova">
+                    </div>
+                    <div class="service-content">
+                        <h3>Corte e Escova</h3>
+                        <p>Cortes modernos e escova modeladora para realçar sua beleza</p>
+                        <div class="service-footer">
+                            <span class="price">A partir de R$ 80</span>
+                            <button class="btn btn-small" onclick="agendarServico('Corte e Escova')">Agendar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="coloracao.jpg" alt="Coloração">
+                    </div>
+                    <div class="service-content">
+                        <h3>Coloração</h3>
+                        <p>Coloração profissional com produtos de alta qualidade</p>
+                        <div class="service-footer">
+                            <span class="price">A partir de R$ 120</span>
+                            <button class="btn btn-small" onclick="agendarServico('Coloração')">Agendar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="tratamento.jpg" alt="Tratamentos">
+                    </div>
+                    <div class="service-content">
+                        <h3>Tratamentos</h3>
+                        <p>Hidratação, botox capilar e reconstrução para cabelos saudáveis</p>
+                        <div class="service-footer">
+                            <span class="price">A partir de R$ 100</span>
+                            <button class="btn btn-small" onclick="agendarServico('Tratamentos')">Agendar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="unha.jpeg" alt="Manicure e Pedicure">
+                    </div>
+                    <div class="service-content">
+                        <h3>Manicure e Pedicure</h3>
+                        <p>Cuidados completos para suas unhas com esmaltação perfeita</p>
+                        <div class="service-footer">
+                            <span class="price">A partir de R$ 50</span>
+                            <button class="btn btn-small" onclick="agendarServico('Manicure e Pedicure')">Agendar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="sombrancelha.png" alt="Sobrancelhas">
+                    </div>
+                    <div class="service-content">
+                        <h3>Sobrancelhas</h3>
+                        <p>Design de sobrancelhas e micropigmentação</p>
+                        <div class="service-footer">
+                            <span class="price">A partir de R$ 40</span>
+                            <button class="btn btn-small" onclick="agendarServico('Sobrancelhas')">Agendar</button>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="frentesalao.jpeg" alt="Sobre nós">
+                </div>
+                <div class="about-text">
+                    <h2>Sobre o Beleza de Mulher</h2>
+                    <p>Com mais de 14 anos de experiência, o Beleza de Mulher é referência em beleza feminina e bem-estar. Nossa equipe de profissionais qualificadas está sempre atualizada com as últimas tendências e técnicas do mercado.</p>
+                    <p>Utilizamos apenas produtos de alta qualidade e oferecemos um atendimento personalizado para cada cliente, garantindo que você saia do nosso salão se sentindo ainda mais confiante e radiante.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Clientes Satisfeitas</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">14+</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeria</h2>
+                <p>Confira alguns dos nossos trabalhos</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="loiro2.jpg" alt="Trabalho 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="loiro3.jpg" alt="Trabalho 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="loiro4.jpg" alt="Trabalho 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="loiro5.jpg" alt="Trabalho 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="unha2.jpeg" alt="Trabalho 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="unha3.jpeg" alt="Trabalho 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Agende seu horário e venha nos visitar</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telefone</h3>
+                            <p>(19) 99388-1317</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Endereço</h3>
+                            <p>Rua mercidio pazelli, 16<br>Valinhos, Sp</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Horário de Funcionamento</h3>
+                            <p>Segunda a Sexta: 9h às 19h<br>Sábado: 8h às 17h<br>Domingo: Fechado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Agende pelo WhatsApp</h3>
+                    <p>Clique no botão abaixo para conversar conosco diretamente pelo WhatsApp e agendar seu horário.</p>
+                    <button class="btn btn-whatsapp" onclick="openWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                        Conversar no WhatsApp
+                    </button>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/salaobelezademulher_/" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo-beleza-da-mulher.jpg" alt="Beleza de Mulher" class="logo">
+                        <h3>Beleza de Mulher</h3>
+                    </div>
+                    <p>Realçando a beleza natural de cada mulher com carinho e profissionalismo há mais de 14 anos.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="footer-contact">
+                        <p>(19) 99388-1317</p>
+                        <p>eli.pires@hotmail.com</p>
+                        <p>Rua mercidio pazelli - 16, Valinhos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beleza de Mulher. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <button class="whatsapp-float-btn" onclick="openWhatsApp()">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
